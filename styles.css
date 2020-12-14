@@ -35,7 +35,7 @@ body {
 }
 
 .header div ul {
-    list-style-type: none;
+    list-style-type:none
 }
 
 .header div ul li {
@@ -58,7 +58,7 @@ p {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../portfolio-main/austin.jpg");
+    background-image: url(".//Assets/Images/austin.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -156,7 +156,7 @@ p {
     color: #ffffff;
 }
 
-.contact-me {
+.social-media {
     margin-bottom: 20px;
     padding: 70px;
     height: 300px;
@@ -164,7 +164,14 @@ p {
     background-color: hsl(202, 62%, 11%);
     color: #ffffff;
 }
-
+.contact-me{
+    margin-bottom: 20px;
+    padding: 70px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: hsl(202, 62%, 11%);
+    color: #ffffff;
+}
 .about-me img {
     max-width:100%;
     height:auto;
@@ -174,7 +181,7 @@ p {
     max-height: 200px;
 }
 
-.contact-me img {
+.social-media img {
     max-height: 200px;
 }
 
@@ -188,6 +195,10 @@ p {
     font-size: 40px;
 }
 
+.social-media h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
 .contact-me h2 {
     margin-bottom: 20px;
     font-size: 40px;
@@ -208,108 +219,3 @@ p {
 }
 /*FOOTER END*/
 
-/*MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen and (max-width: 980px){
-    header{
-        padding-bottom: 0;
-        justify-content: center;
-        position: relative;
-    }
-    header h1 {
-        width: 100%;
-        text-align: center;
-    }
-    header nav ul {
-        margin-top: 20px;
-        width: 100%;
-        justify-content: center;
-    }
-    header nav ul li a {
-        font-size: 20px;
-    }
-    footer h2, footer div {
-        text-align: center;
-        width: 100%;
-    }
-}
-    .hero-cta, .hero-form {
-        width: 100%;
-    }
-    .hero-cta {
-        text-align: center;
-    }
-    .section-title {
-        width: 80%;
-    }
-    .trainer {
-        flex: 0 70%;
-    }
-    .contact-info iframe {
-        flex: 1 100%;
-    }
-/*MEDIA QUERY FOR TABLETS AND SMALLER */
-@media screen and (max-width:768px){
-    .service-grid-container{
-        grid-template-columns: 1fr 1fr;
-    }
-    .service-grid-item.basic{
-        grid-column: 1;
-    }
-    .service-grid-item.both{
-        grid-column: 1 / -1;
-    }
-    .service-grid-item.cancel{
-        transform: none;
-        writing-mode: unset;
-        grid-column: 1/ -1;
-        grid-row: -1;
-    }
-    
-    
-    section {
-        padding: 30px 15px;
-    }
-    .step h3 {
-        flex: 1 100%;
-        text-align: center;
-        justify-content: center;
-    }
-    .step-info{
-        flex: 2 100%;
-        text-align: center;
-        justify-content: center;
-    }
-    .step-img {
-        flex: 0 32%;
-        margin-right: 0;
-        margin-top: 15px;
-    }
-    .step-text {
-        flex: 100%;
-    }
-} 
-
-/*MEDIA QUERY FOR MOBILE PHONES AND SMALLER*/
-@media screen and (max-width:575px) {
-    .hero-form button {
-        width: 100%;
-    }
-    .section-title {
-        width: 95%;
-    }
-    .intro p {
-        width: 100%;
-    }
-    .trainer {
-        flex: 0 100%;
-    }
-    .contact-info {
-        text-align: center;
-    }
-    .contact-info > * {
-        flex: 0 100%;
-    }
-    .contact-form {
-        order: 3;
-    }
-}  
