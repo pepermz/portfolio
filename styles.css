@@ -145,6 +145,8 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: hsl(202, 62%, 11%);
     color: #ffffff;
+    display: flex;
+    align-items: center;
 }
 
 .my-projects {
@@ -154,6 +156,8 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: hsl(202, 62%, 11%);
     color: #ffffff;
+    display: flex;
+    align-items: center;
 }
 
 .social-media {
@@ -163,6 +167,8 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: hsl(202, 62%, 11%);
     color: #ffffff;
+    display: flex;
+    align-items: center;
 }
 .contact-me{
     margin-bottom: 20px;
@@ -171,6 +177,8 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: hsl(202, 62%, 11%);
     color: #ffffff;
+    display: flex;
+    align-items: center;
 }
 .about-me img {
     max-width:100%;
@@ -185,9 +193,19 @@ p {
     max-height: 200px;
 }
 
-.about-me h2 {
-    margin-bottom: 20px;
+.about-me h2, .my-projects h2, .social-media h2, .contact-me h2 {
     font-size: 40px;
+    width: 25%;
+    border-right: 2px solid oldlace;
+    line-height: 80px;
+}
+
+.about-me p, .my-projects a, .social-media p, .contact-me address{
+    width: 65%;
+    margin-left: 5%;
+}
+.social-media a{
+    padding-right: 20px;
 }
 
 .my-projects h2 {
@@ -202,6 +220,11 @@ p {
 .contact-me h2 {
     margin-bottom: 20px;
     font-size: 40px;
+}
+.run-buddy {
+    background: url(.//Assets/Images/run-buddy.PNG);
+    width: 100px;
+    height: 80px;
 }
 /*CONTENT END*/
 
